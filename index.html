@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online bus ticket booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://st.redbus.in/web/images/layout/rb_vertical.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100;300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div style="height: 100%; width: 15%;"><img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" alt=""
+                    style="margin-top: 20px; position: relative;left: 30%; cursor: pointer;"></div>
+            <div style="height: 100%; background-color: white; width: 45%; display: flex;">
+                <div
+                    style="height: 100%; width: 20%; margin-left: 10%; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;">
+                    <img src="https://st.redbus.in/web/images/layout/rb_vertical.svg" alt="">
+                    <p>Bus Tickets</p>
+                </div>
+                <div
+                    style="height: 100%; width: 20%; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;">
+                    <img src="https://st.redbus.in/web/images/layout/ryde_vertical.svg" alt="">
+                    <p>Cab Rental</p>
+                </div>
+                <div
+                    style="height: 100%; width: 20%; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;">
+                    <img src="https://st.redbus.in/web/images/layout/rail_vertical.svg" alt="">
+                    <p>Train Tickets</p>
+                </div>
+            </div>
+            <div style="height: 100%; width: 40%; display: flex; justify-content: flex-end; gap: 5%;">
+                <div
+                    style="display: flex; height: 100%; width: 20%; justify-content: center; align-items: center; gap: 5%; cursor: pointer;">
+                    <i class="fa-solid fa-headphones fa-lg"></i>
+                    <p>Help</p>
+                </div>
+                <div
+                    style="display: flex; height: 100%; width: 20%; justify-content: center; align-items: center; gap: 5%; margin-right: 15%; cursor: pointer;">
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <p>Account</p><i class="fa-solid fa-chevron-down fa-lg"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-child">
+            <p style="margin-top: 3.5%;">India's No. 1 online Bus Ticket Booking Site</p>
+            <div class="search-bar">
+                <div class="from-box">
+                    <div style="margin-left: 8%;"><i class="fa-solid fa-bus"></i></div>
+                    <p>From</p>
+                </div>
+                <div class="To-box">
+                    <div style="margin-left: 10%;"><i class="fa-solid fa-bus"></i></div>
+                    <p>To</p>
+                </div>
+                <div class="Date-box">
+                    <div style="margin-left: 6%;"><i class="fa-regular fa-calendar-days"></i></div>
+                    <p>Date</p>
+                </div>
+                <div class="Search-box">
+                    <p style="text-align: center; margin: 0; padding: 0; color: white;">SEARCH BUSES</p>
+                </div>
+                <div class="both-side-arrow">
+                    <img src="exchange (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="offers-box">
+            <div style="width: 100%; display: flex; height: 30%; justify-content: space-between; margin-bottom:0;">
+                <p style="margin: 0; margin-top: 3%; margin-left: 7%;">TRENDING OFFERS</p>
+                <a href="#" style="display: flex; justify-content: center; align-items: center;" id="view">View All</a>
+            </div>
+
+            <div style="width: 90%; min-height: 70%;margin-inline: 5%;" class="cards">
+
+
+                <div class="card1">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Save up to Rs 250 on bus tickets</p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 30 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: 30%; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                FIRST</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card1"
+                    style="background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%);">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/Images/INDOFFER/HDFC300/80x80.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Get 10% upto off Rs 300 on HDFC Bank
+                            </p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 14 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: fit-content; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                HDFC300</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card1"
+                    style="background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/Images/INDOFFER/80x80/SUPERHIT.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Save up to Rs 300 on AP , TS routes
+                            </p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 30 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: fit-content; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                SUPERHIT</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card1"
+                    style="background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/Images/INDOFFER/80x80/SUPERHIT.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Save up to Rs 300 on AP , TS routes
+                            </p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 30 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: fit-content; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                SUPERHIT</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card1"
+                    style="background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/Images/INDOFFER/80x80/SUPERHIT.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Save up to Rs 300 on AP , TS routes
+                            </p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 30 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: fit-content; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                SUPERHIT</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card1"
+                    style="background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="https://st.redbus.in/Images/INDOFFER/80x80/SUPERHIT.png" alt=""
+                            style="border-radius: 100%; padding-inline: 10px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%; width: 63%; gap: 5%;">
+                        <div
+                            style="font-size: 17px; height: 23px; width: 50px; background: rgba(255, 255, 255, 0.2); text-align: center; border-radius: 10px; display: flex; justify-content: center; align-items:  center; margin-bottom: 10%;margin-top: 5%;">
+                            <p style="margin: 0;">Bus</p>
+                        </div>
+                        <div style="font-size: 20px;margin-bottom: 2px;">
+                            <p style="margin: 0; padding: 0;font-weight: bolder;">Save up to Rs 300 on AP , TS routes
+                            </p>
+                        </div>
+                        <div style="font-size: 15px;">Valid till 30 Nov</div>
+                        <div style="height: 15%; width: 100%; display: flex;margin-block: 10px;">
+                            <div
+                                style="height: 100%; width: fit-content; font-size: 17px; border: 1px dotted white; background-color: rgba(255, 255, 255, 0.2); text-align: center; display: flex; justify-content: center; align-items:  center; border-radius: 4px;">
+                                SUPERHIT</div>
+                            <div style="margin-left: 4%;"><img src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="sponser-box">
+            <img src="https://platforms.makemytrip.com/contents/eb882edd-8d39-4cf1-8d57-a04f6e64f7c1" alt="">
+        </div>
+
+
+        <div class="ticket-book">
+            <div class="ticket-section">
+                <div class="card-element">
+                    <h2>NOW,<b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!</h2>
+                    <div style="height: 10%; width: 100%; margin-top: 30px; display: flex;">
+                        <div
+                            style="height: 100%; width: 50%; display:flex; justify-content: center; align-items: center; border-bottom: 4px solid rgb(216, 78, 85); box-sizing: border-box; cursor: pointer;">
+                            <div><img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/ryde.svg" alt=""></div>
+                            <div style="font-size: 18px; color: rgb(216, 78, 85); font-weight: 800; margin-left: 15px;">
+                                Cab/Bus Rental</div>
+                        </div>
+                        <div style="height: 100%; width: 50%; display:flex; justify-content: center; align-items: center; border-bottom: 0.1px solid #4a4a4a; box-sizing: border-box; cursor: pointer;"
+                            class="train">
+                            <div><img src="https://s1.rdbuz.com/web/images/homeV2/AboutUs/redRail.svg" alt=""></div>
+                            <div style="font-size: 18px; margin-left: 15px; color: #4a4a4a;">Train Tickets</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 20px; color: #4a4a4a; margin-top: 40px;">Rent Cabs , Tempo Travellers & Buses
+                        with best drivers</p>
+                    <div
+                        style="height: 8%; width: 60%; display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                        <div><img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/ryde_car.svg" alt=""></div>
+                        <div style="margin-left: 25px; font-size: 20px;"><b>Outstation</b></div>
+                    </div>
+                    <div
+                        style="height: 8%; width: 60%; display: flex; justify-content: start; align-items: center; margin-top: 10px;">
+                        <div><img src="https://s1.rdbuz.com/web/images/homeV2/AboutUs/ryde_car_hourly.svg" alt=""></div>
+                        <div style="margin-left: 25px; font-size: 20px;"><b>Hourly Rental</b></div>
+                    </div>
+                    <div
+                        style="height: 8%; width: 60%; display: flex; justify-content: start; align-items: center; margin-top: 10px;">
+                        <div><img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/ryde_airport_transport.svg"
+                                alt=""></div>
+                        <div style="margin-left: 25px; font-size: 20px;"><b>Airpot Transfer</b></div>
+                    </div>
+                    <div
+                        style="height: 8%; width: 60%; background-color: rgb(216, 78, 85); color: white; margin-top: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 22px;">
+                        Book Cab / Bus Rental <i class="fa-solid fa-arrow-right" style="margin-left: 4%;"></i></div>
+                </div>
+                <div class="card-element1">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/rydePop.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Refer-section">
+            <div class="refer">
+                <p
+                    style="color: white; font-size: 40px; margin-block: 2%;margin-inline-start: 2%; letter-spacing: 2px;">
+                    ENJOY THE APP!</p>
+                <div style="height: 80%; width: 90%; margin-left: 2%; margin-bottom: 4%; display: flex;">
+                    <div
+                        style="height: 100%; width: 35%; background-color: white; border-radius: 40px; display: flex; flex-direction: column;">
+                        <div style="margin: 0; display: flex; margin-top: 20px; margin-left: 30px;">
+                            <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="">
+                            <p style="margin-left: 10px; font-size: 22px; letter-spacing: 1px;">Quick access</p>
+                        </div>
+                        <div style="display: flex; margin-top: 0px; margin-left: 30px;">
+                            <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" alt="">
+                            <p style="margin: 0; margin-left: 10px; font-size: 22px; letter-spacing: 1px;">Superior live
+                                tracking</p>
+                        </div>
+                        <div style="display: flex; margin-left: 30px; margin-top: 30px;">
+                            <div
+                                style="display: flex; flex-direction: column; gap: 4px; width: 40%; margin-right: 0.5px solid #4a4a4a;">
+                                <p style="margin: 0; font-size: 20px; color: #4a4a4a;"><b>4.5 <i
+                                            class="fa-solid fa-star"></i></b></p>
+                                <p style="margin: 0; color: #4a4a4a;">50M+ downloads</p>
+                                <p style="margin: 0; color: #4a4a4a;"><b>Play Store</b></p>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; gap: 4px; width: 45%; border-left: 0.1px solid #4a4a4a;">
+                                <p style="margin: 0; font-size: 20px; color: #4a4a4a; margin-left: 20px;"><b>4.6 <i
+                                            class="fa-solid fa-star"></i></b></p>
+                                <p style="margin: 0; color: #4a4a4a; margin-left: 20px;">50M+ downloads</p>
+                                <p style="margin: 0; color: #4a4a4a; margin-left: 20px;"><b>App Store</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 40%; display: flex;">
+                        <div
+                            style="height: 100%; display: flex; flex-direction: column; margin-left: 30px; width: 30%; justify-content: center;">
+                            <p style="font-size: 23px; color: white; font-weight: 700;">Scan to download</p>
+                            <img src="https://s1.rdbuz.com/web/images/homeV2/qrCode.svg" alt="">
+                        </div>
+                        <div
+                            style="height: 100%; width: 30%; display: flex; flex-direction: column; gap: 4%; margin-left: 50px;">
+                            <p style="margin: 0; font-size: 23px; color: white; font-weight: 700; margin-top: 28px;">
+                                Download the App on</p>
+                            <img src="https://s2.rdbuz.com/web/images/homeV2/appinstall/playStore.svg" alt=""
+                                style="margin-top: 9px; height: 60px;">
+                            <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/appStore.svg" alt=""
+                                style="margin-top: 3px; height: 60px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stats">
+            <img src="https://s1.rdbuz.com/web/images/homeV2/primoSection/primoTopBanner.svg" alt="">
+        </div>
+
+
+        <div class="stats2">
+            <div class="spec">
+                <div class="img-sec">
+                    <img src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg1.svg" alt="PrimoImg">
+                </div>
+                <div class="text-sec">
+                    <h1> 1 of 5 buses qualify</h1>
+                    <p>Primo’s strict safety qualification ensures a safer travel for you</p>
+                </div>
+            </div>
+
+
+            <div class="spec">
+                <div class="img-sec">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/primoSection/primoSubImg2.svg" alt="PrimoImg">
+                </div>
+                <div class="text-sec">
+                    <h1>Preferred by 90%</h1>
+                    <p>90% of travellers re-book Primo buses for its punctuality and comfort</p>
+                </div>
+            </div>
+
+
+            <div class="spec">
+                <div class="img-sec">
+                    <img src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg3.svg" alt="PrimoImg">
+                </div>
+                <div class="text-sec">
+                    <h1>9 Lac+ monthly travellers</h1>
+                    <p>In 2022, 9 Lac+ people traveled with Primo every month</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners">
+            partners with
+        </div>
+
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
